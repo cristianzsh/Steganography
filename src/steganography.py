@@ -19,7 +19,7 @@ def pixels(len):
 def encrypt(msg):
 	return base64.b64encode(msg)
 
-def decrypting(msg):
+def decrypt(msg):
 	return base64.b64decode(msg)
 
 def insert_text(img, dest, msg):
@@ -69,7 +69,7 @@ def Main():
 		msg = raw_input("Enter the text: ")
 		insert_text(argument[2], argument[3], convert_to_binary(encrypt(msg)))
 	elif args == 3 and argument[1] == "-e":
-		print decrypting(convert_to_string(extract_text(argument[2])))
+		print decrypt(convert_to_string(extract_text(argument[2])))
 
 if __name__ == "__main__":
 	Main()
