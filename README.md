@@ -4,9 +4,12 @@ Steganography in images with Python
 # Usage
 
 ``` -i ```: to insert a message in the picture
+
 ``` -e ```: to extract the message
 
-<img src="src/tron.gif">
+<p align="center">
+	<img src="src/tron.gif">
+</p>
 
 ## Original image
 <img src="src/tron.jpg"/>
